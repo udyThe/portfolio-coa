@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Uday Surothiya - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="fade-in">Uday Surothiya</h1>
+        <p class="slide-in">Backend & Frontend Developer | Cloud Computing Enthusiast</p>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/featured.html">Featured</a></li>
+                <li><a href="/index.html">About</a></li>
+                <li><a href="/skills.html">Skills</a></li>
+                <li><a href="/experiments.html">Experiments</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contact" class="section slide-in">
+        <h2 style="color: #ffffff;">Contact</h2>
+        <p>Email: <a href="mailto:udaysurothiya@gmail.com">udaysurothiya@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/uday-surothiya-3048a5247" target="_blank">https://linkedin.com/in/uday-surothiya-3048a5247</a></p>
+        <p>GitHub: <a href="https://github.com/udyThe" target="_blank">github.com/udyThe</a></p>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".fade-in").forEach(el => {
+                el.style.opacity = 0;
+                setTimeout(() => {
+                    el.style.transition = "opacity 2s";
+                    el.style.opacity = 1;
+                }, 500);
+            });
+
+            document.querySelectorAll(".slide-in").forEach(el => {
+                el.style.transform = "translateX(-100%)";
+                setTimeout(() => {
+                    el.style.transition = "transform 1.5s ease-in-out";
+                    el.style.transform = "translateX(0)";
+                }, 700);
+            });
+        });
+    </script>
+</body>
+</html>

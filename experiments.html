@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>Uday Surothiya - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="fade-in">Uday Surothiya</h1>
+        <p class="slide-in">Backend & Frontend Developer | Cloud Computing Enthusiast</p>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/featured.html">Featured</a></li>
+                <li><a href="/index.html">About</a></li>
+                <li><a href="/skills.html">Skills</a></li>
+                <li><a href="/experiments.html">Experiments</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<section>
+    <div  class="section experiments">
+        <div class="project-link-row">
+            <a href="https://github.com/udyThe/containerexp/tree/main/1.DOCKER%20BASICS%3A%20Hello%20World" target="_blank" class="project-link">
+                <span class="project-title">1.DOCKER BASICS: Hello World</span>
+            </a>
+        </div>
+        <div class="project-link-row">
+            <a href="https://github.com/udyThe/containerexp/tree/main/2.%20Dockerized%20Streamlit%20Development%20Environment" target="_blank" class="project-link">
+                <span class="project-title">2. Dockerized Streamlit Development Environment</span>
+            </a>
+        </div>
+        <div class="project-link-row">
+            <a href="https://github.com/udyThe/containerexp/tree/main/3.Titanic%20Survival%20Predictor%20Containerized%20Streamlit%20App" target="_blank" class="project-link">
+                <span class="project-title">3.Titanic Survival Predictor Containerized Streamlit App</span>
+            </a>
+        </div>
+        <div class="project-link-row">
+            <a href="https://github.com/udyThe/containerexp/tree/main/4.%20Containerized%20MySQL%3A%20Agile%20%26%20Efficient%20" target="_blank" class="project-link">
+                <span class="project-title">4. Containerized MySQL: Agile & Efficient </span>
+            </a>
+        </div>
+        <div class="project-link-row">
+            <a href="https://github.com/udyThe/containerexp/tree/main/5.%20Docker%20Volume%20Persistence%3A%20Bind%20Mounts%20with%20Linux%20Containers%20" target="_blank" class="project-link">
+                <span class="project-title">5. Docker Volume Persistence: Bind Mounts with Linux Containers </span>
+                <span class="project-description"></span>
+            </a>
+        </div>
+        <div class="project-link-row">
+            <a href="https://github.com/udyThe/containerexp/tree/main/6.%20Docker%20Bridge%3A%20Balancing%20Isolation%20%26%20Connectivity%20" target="_blank" class="project-link">
+                <span class="project-title">6. Docker Bridge: Balancing Isolation & Connectivity </span>
+            </a>
+        </div>
+        <div class="project-link-row">
+            <a href="https://github.com/udyThe/containerexp/tree/main/7.%20Streamlit%20%26%20PostgreSQL%2C%20Docked" target="_blank" class="project-link">
+                <span class="project-title">7. Streamlit & PostgreSQL, Docked </span>
+            </a>
+        </div>
+        <div class="project-link-row">
+            <a href="https://github.com/udyThe/containerexp/tree/main/8.%20Evidently%20AI%20Sets%20Sail%20in%20Docker" target="_blank" class="project-link">
+                <span class="project-title">8. Evidently AI Sets Sail in Docker </span>
+            </a>
+        </div>
+        <div class="project-link-row">
+            <a href="https://github.com/udyThe/containerexp/tree/main/9.%20Minikube%20with%20Docker%20on%20Windows" target="_blank" class="project-link">
+                <span class="project-title">9. Minikube with Docker on Windows </span>
+            </a>
+        </div>
+        <div class="project-link-row">
+            <a href="https://github.com/udyThe/containerexp/tree/main/10.%20Deploying%20a%20Streamlit%20App%20in%20Docker%20on%20AWS%20EC2" target="_blank" class="project-link">
+                <span class="project-title">10. Deploying a Streamlit App in Docker on AWS EC2</span>
+            </a>
+        </div>
+        <div class="project-link-row">
+            <a href="https://github.com/udyThe/containerexp/tree/main/11.Microservices%20Orchestration%20with%20Minikube%20and%20Kubernetes" target="_blank" class="project-link">
+                <span class="project-title">11.Microservices Orchestration with Minikube and Kubernetes</span>
+            </a>
+        </div>
+        <div class="project-link-row">
+            <a href="https://github.com/udyThe/containerexp/tree/main/12.%20Microservices%20Architecture%20using%20Docker%20Swarm" target="_blank" class="project-link">
+                <span class="project-title">12. Microservices Architecture using Docker Swarm </span>
+            </a>
+        </div>
+        <div class="project-link-row">
+            <a href="https://github.com/udyThe/containerexp/tree/main/13.%20Bakery%20Foundation%20Example%20on%20Windows" target="_blank" class="project-link">
+                <span class="project-title">13. Bakery Foundation Example on Windows</span>
+            </a>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".fade-in").forEach(el => {
+            el.style.opacity = 0;
+            setTimeout(() => {
+                el.style.transition = "opacity 2s";
+                el.style.opacity = 1;
+            }, 500);
+        });
+
+        document.querySelectorAll(".slide-in").forEach(el => {
+            el.style.transform = "translateX(-100%)";
+            setTimeout(() => {
+                el.style.transition = "transform 1.5s ease-in-out";
+                el.style.transform = "translateX(0)";
+            }, 700);
+        });
+    });
+</script>
+</body>
+</html>
